@@ -16,11 +16,6 @@ const BRAVE_API_KEY = Deno.env.get('BRAVE_API_KEY')!
 const OPENAI_API_KEY = Deno.env.get('OPENAI_API_KEY')!
 
 serve(async (req: any) => {
-  // This is an example of a Cron Job.
-  // 1. You can visit this function in your browser at `http://localhost:54321/functions/v1/generate-daily-insights`
-  // 2. You can ask the AI to elaborate on the Cron Job step and provide you a command.
-  // 3. You can use the Supabase CLI to deploy this function: `supabase functions deploy generate-daily-insights --no-verify-jwt`
-  // 4. Finally, you can use the SQL editor in your Supabase project dashboard to schedule this function.
 
   if (req.method === 'OPTIONS') {
     return new Response('ok', { headers: corsHeaders })

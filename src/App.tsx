@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Session } from '@supabase/supabase-js';
-import { supabase } from './services/supabase';
-import { Header } from './components/layout/Header';
-import { Dashboard } from './components/dashboard/Dashboard';
-import { AuthPage } from './pages/AuthPage';
+import { supabase } from '@/services/supabase';
+import { Header } from '@/components/ui/Header';
+import { Dashboard } from '@/components/dashboard/Dashboard';
+import { AuthPage } from '@/auth/AuthPage';
 
 // Basic styles for the auth page container
 const authContainerStyle: React.CSSProperties = {
@@ -45,7 +45,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return null; // Or a loading spinner
+    return null;
   }
 
   return (

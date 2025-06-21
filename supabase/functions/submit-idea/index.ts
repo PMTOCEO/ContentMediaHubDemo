@@ -22,7 +22,7 @@ serve(async (req) => {
   }
 
   try {
-    // 1. Get data from request - only 'title' is needed now
+    // 1. Get data from request
     const { title } = await req.json()
     if (!title) {
       throw new Error('Missing required field: title')

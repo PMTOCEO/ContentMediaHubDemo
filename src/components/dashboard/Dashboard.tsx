@@ -1,7 +1,7 @@
 import React from 'react';
-import { ContentSubmissionForm } from './NewIdeaSubmissionCard';
-import { IdeasTable } from './TeamIdeasTable';
-import { TodaysInsights } from './DailyInsightsCard';
+import { ContentSubmissionForm } from '@/components/dashboard/NewIdeaSubmissionCard';
+import { IdeasTable } from '@/components/dashboard/TeamIdeasTable';
+import { TodaysInsights } from '@/components/dashboard/DailyInsightsCard';
 
 const dashboardContainerStyle: React.CSSProperties = {
   display: 'grid',

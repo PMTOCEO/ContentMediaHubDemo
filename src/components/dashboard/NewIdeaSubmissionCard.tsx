@@ -1,7 +1,7 @@
 import React, { useState, FormEvent } from 'react';
 import { supabase } from '@/services/supabase';
 import { Card, CardHeader } from '@/components/ui/Card';
-import { eventBus } from '@/lib/events';
+import { eventBus } from '@/utils/events';
 import cardStyles from '@/styles/card.module.css';
 
 export function ContentSubmissionForm() {

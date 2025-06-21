@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { supabase } from '@/services/supabase';
 import { Card } from '@/components/ui/Card';
-import { eventBus } from '@/lib/events';
+import { eventBus } from '@/utils/events';
 import { Modal } from '@/components/ui/PopupModal';
 import tableStyles from '@/styles/table.module.css';
 import popupStyles from '@/styles/popup.module.css';
