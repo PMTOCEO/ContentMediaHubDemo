@@ -4,9 +4,9 @@ This is a demo application that showcases a modern, AI-powered web application u
 
 ## Key Features
 
--   **AI-Powered Daily Insights**: A serverless function runs daily to fetch the latest trends in digital marketing and technology using the Brave Search API. This content is then analyzed by OpenAI's GPT-4o to generate actionable insights for the content team.
--   **Team Idea Submission & Collaboration**: Authenticated users can submit new content ideas through a simple form. All ideas are stored in a shared database and displayed in a table for team visibility.
--   **Content Analysis**: (Future implementation) Submitted ideas can be automatically analyzed for relevance, originality, and potential impact using AI.
+-   **AI-Powered Daily Insights**: A serverless function runs daily to fetch the latest trends in digital marketing and technology using the Brave Search API. This content is then analyzed by OpenAI's GPT-4o to generate actionable insights for the content team. This process can also be manually triggered using the Refresh button at the top of the card.
+-   **Team Idea Submission & Collaboration**: Authenticated users can submit new content ideas through a simple form. All ideas are stored in a shared database and displayed in a public table: 'detailed_content_ideas'.
+-   **Content Analysis**: Submitted ideas are automatically analyzed for relevance, originality, and potential impact using Brave Web Search and OpenAI APIs.
 -   **Secure User Authentication**: User management and authentication are handled by Supabase Auth, providing a secure and easy-to-use login system.
 
 ## Tech Stack
