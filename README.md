@@ -27,7 +27,9 @@ This is a demo application that showcases a modern, AI-powered web application u
 
 ## Getting Started
 
-Follow these instructions to get a local copy of the project up and running for development and testing purposes.
+To view the live demo, please visit https://thriving-fenglisu-3d9a95.netlify.app/
+
+To install a local copy of the project for development and testing, please follow these instructions
 
 ### Prerequisites
 
