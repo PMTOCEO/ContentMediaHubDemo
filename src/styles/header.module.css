@@ -1,0 +1,76 @@
+.header {
+  composes: bgSecondary from './global.module.css';
+  composes: borderBottom from './global.module.css';
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchContainer {
+  flex: 1 1 0%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.searchInput {
+  composes: borderRadius from './global.module.css';
+  composes: border from './global.module.css';
+  composes: colorPrimary from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--background-primary);
+  font-family: var(--font-family);
+}
+
+.searchInput:focus {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand-secondary);
+  flex-shrink: 0;
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.email {
+  composes: fontSize1rem from './global.module.css';
+  composes: colorSecondary from './global.module.css';
+}
+
+.button {
+  composes: button from './global.module.css';
+  composes: colorSecondary from './global.module.css';
+}
+
+.button:hover {
+  background-color: var(--background-tertiary);
+}
+
+.searchTooltip {
+  composes: bgSecondary from './global.module.css';
+  composes: colorSecondary from './global.module.css';
+  composes: border from './global.module.css';
+  composes: borderRadius from './global.module.css';
+  composes: cardShadow from './global.module.css';
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  font-size: 0.875rem;
+  z-index: 10;
+  text-align: center;
+}

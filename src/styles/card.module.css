@@ -1,0 +1,90 @@
+.card {
+  composes: bgSecondary from './global.module.css';
+  composes: borderRadius from './global.module.css';
+  composes: cardShadow from './global.module.css';
+  composes: border from './global.module.css';
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  composes: fontWeight600 from './global.module.css';
+  composes: borderBottom from './global.module.css';
+  font-size: 1.5rem;
+  margin: 0;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+/* Styles for the submission form inside a card */
+.submissionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.textarea {
+  composes: borderRadius from './global.module.css';
+  composes: border from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #FFF;
+  font-family: var(--font-family);
+  flex: 1;
+  resize: none;
+}
+
+.textarea:focus {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
+
+.submitButton {
+  composes: borderRadius from './global.module.css';
+  composes: fontWeight600 from './global.module.css';
+  composes: cursorPointer from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  padding: 12px 24px;
+  border: none;
+  background-color: var(--brand-primary);
+  color: #FFF;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Styles for the insights card content */
+.insightsContainer {
+  composes: fontSize1rem from './global.module.css';
+  min-height: 150px;
+  position: relative;
+  padding: 16px;
+}
+
+.loadingOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  z-index: 1;
+}
+
+.insightsContainer ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.insightsContainer li {
+  margin-bottom: 1em;
+}

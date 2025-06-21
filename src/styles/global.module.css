@@ -1,0 +1,59 @@
+/* Font Sizes */
+.fontSize1rem {
+  font-size: 1rem;
+}
+
+/* Font Weights */
+.fontWeight500 {
+  font-weight: 500;
+}
+
+.fontWeight600 {
+  font-weight: 600;
+}
+
+/* Borders */
+.borderRadius {
+  border-radius: var(--border-radius);
+}
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.borderBottom {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Colors */
+.colorPrimary {
+  color: var(--text-primary);
+}
+
+.colorSecondary {
+  color: var(--text-secondary);
+}
+
+/* Backgrounds */
+.bgSecondary {
+  background-color: var(--background-secondary);
+}
+
+/* Other */
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cardShadow {
+  box-shadow: var(--card-shadow);
+}
+
+.button {
+  composes: cursorPointer;
+  composes: borderRadius;
+  composes: fontWeight500;
+  composes: fontSize1rem;
+  background: transparent;
+  border: none;
+  padding: 8px;
+} 

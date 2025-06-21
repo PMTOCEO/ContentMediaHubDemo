@@ -1,0 +1,67 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.th {
+  composes: borderBottom from './global.module.css';
+  composes: fontWeight600 from './global.module.css';
+  composes: colorSecondary from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  padding: 12px 16px;
+  text-transform: uppercase;
+}
+
+.td {
+  composes: borderBottom from './global.module.css';
+  composes: colorPrimary from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  padding: 12px 16px;
+}
+
+.projectStatusBadge {
+  composes: fontSize1rem from './global.module.css';
+  composes: fontWeight500 from './global.module.css';
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  position: relative;
+}
+
+.analysisStatusBadge {
+  composes: fontSize1rem from './global.module.css';
+  composes: fontWeight500 from './global.module.css';
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+}
+
+.refreshButton {
+  composes: borderRadius from './global.module.css';
+  composes: border from './global.module.css';
+  composes: bgSecondary from './global.module.css';
+  composes: colorPrimary from './global.module.css';
+  composes: fontWeight500 from './global.module.css';
+  composes: cursorPointer from './global.module.css';
+  composes: fontSize1rem from './global.module.css';
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.clickableText {
+  color: var(--text-accent);
+  font-weight: 500;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
